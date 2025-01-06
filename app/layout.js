@@ -1,4 +1,4 @@
-import { Outfit, Ovo, Ovo } from "next/font/google";
+import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
