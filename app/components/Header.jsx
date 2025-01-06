@@ -5,8 +5,9 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='w-11/12 msx-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
-        <div>
-            <Image src={assets.profile_img} alt='' className='rounded-full w-32' />
+        <div >
+            <Image src={assets.profile_img} alt='' className='rounded-full w-32 
+            hover:-translate-y-1 duration-500 hover:shadow-green_circle ' />
         </div>
         <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
             Hi! I'm Chhotu Goud 
@@ -17,7 +18,8 @@ const Header = () => {
            Full-Stack Web Developer
         </h1>
         <p className='max-w-2xl mx-auto font-Ovo'>
-        I am a full-stack developer from India with hands-on experience in building dynamic web applications. My expertise spans across modern technologies like React.js, Node.js, and Tailwind CSS, and I have developed impactful projects such as an online food delivery system and a Pandit booking platform. Constantly learning and solving challenges, I’ve tackled over 300 data structure and algorithm problems to strengthen my coding skills.        </p>
+        I am a full-stack developer from India with expertise in JavaScript, React.js, Node.js, MongoDB, and Tailwind CSS. I specialize in building dynamic web applications with modern technologies. Constantly learning, I’ve solved 300+ coding challenges to refine my skills.      
+        </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4
         '>
             <a href="#contact"
