@@ -36,6 +36,17 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
+
+// import more skills 
+import react_Icon from './react-icon.png';  // Add the React icon
+import nextjs_Icon from './nextjs-icon.png';  // Add the Next.js icon
+import tailwind_Icon from './tailwind-icon.png';  // Add the Tailwind CSS icon
+import javascript_Icon from './javascript-icon.png';  // Add the JavaScript icon
+import nodejs_Icon from './nodejs-icon.png';  // Add the Node.js icon
+import express_Icon from './express-icon.png';  // Add the Express.js icon
+import django_Icon from './django-icon.png';  // Add the Django icon
+
+
 export const assets = {
     user_image,
     code_icon,
@@ -73,7 +84,17 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+
+    // Updated skill and technology icons
+    react_Icon,
+    nextjs_Icon,
+    tailwind_Icon,
+    javascript_Icon,
+    nodejs_Icon,
+    express_Icon,
+    django_Icon
+
 };
 
 export const workData = [
@@ -114,4 +135,29 @@ export const infoList = [
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+];
+
+
+
+// skills objects
+
+export const frontendSkillData = [
+    { icon: assets.react_Icon, title: 'React.js' },
+    { icon: assets.nextjs_Icon, title: 'Next.js' },
+    { icon: assets.javascript_Icon, title: 'JavaScript' },
+    { icon: assets.tailwind_Icon, title: 'Tailwind CSS' }
+];
+
+export const backendSkillData = [
+    { icon: assets.nodejs_Icon, title: 'Node.js' },
+    { icon: assets.express_Icon, title: 'Express.js' },
+    { icon: assets.mongodb, title: 'MongoDB' },
+    { icon: assets.django_Icon, title: 'Django' }
+];
+
+export const toolsSkillData = [
+    { icon: assets.vscode, title: 'VS Code' },
+    { icon: assets.git, title: 'Git' },
+    { icon: assets.firebase, title: 'Firebase' },
+    { icon: assets.figma, title: 'Figma' }
 ];
