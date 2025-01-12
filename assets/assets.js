@@ -45,7 +45,7 @@ import javascript_Icon from './javascript-icon.png';  // Add the JavaScript icon
 import nodejs_Icon from './nodejs-icon.png';  // Add the Node.js icon
 import express_Icon from './express-icon.png';  // Add the Express.js icon
 import django_Icon from './django-icon.png';  // Add the Django icon
-
+import pandit_project_image from './pandit-booking-image1.png';
 
 export const assets = {
     user_image,
@@ -93,7 +93,8 @@ export const assets = {
     javascript_Icon,
     nodejs_Icon,
     express_Icon,
-    django_Icon
+    django_Icon,
+    pandit_project_image,
 
 };
 
@@ -161,3 +162,18 @@ export const toolsSkillData = [
     { icon: assets.firebase, title: 'Firebase' },
     { icon: assets.figma, title: 'Figma' }
 ];
+
+
+// projectData.js
+
+export const projectData = [
+    {
+      title: 'Pandit Booking Website',
+      description: 'A platform that allows users to book Pandits based on their availability, specialization, and pricing.',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Razorpay'],
+      imageUrl: assets.pandit_project_image, // Replace with actual path to image
+      githubLink: 'https://github.com/chhotugoud7/pandit-booking',  // Add your GitHub repo link
+      liveLink: 'https://pandit-booking.com',  // Replace with live project link if available
+    },
+  ];
+  
