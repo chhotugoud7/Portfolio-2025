@@ -29,7 +29,28 @@ export default {
         'black_circle': '0 0 8px 4px #000000',
         'red_circle': '0 0 8px 4px #FF0000',
          
-      }
+      },
+      project_primary: {
+        light: '#4f46e5', // Light shade for hover or active states
+        DEFAULT: '#3730a3', // Default primary color
+        dark: '#312e81', // Darker shade for focus or darker backgrounds
+      },
+      project_secondary: {
+        light: '#22c55e', // Secondary light
+        DEFAULT: '#16a34a', // Secondary main
+        dark: '#15803d', // Secondary dark
+      },
+      project_accent: {
+        light: '#f472b6', // Accent light
+        DEFAULT: '#ec4899', // Accent main
+        dark: '#db2777', // Accent dark
+      },
+      project_neutral: {
+        light: '#f3f4f6', // Light neutral background
+        DEFAULT: '#e5e7eb', // Neutral gray
+        dark: '#6b7280', // Dark neutral text
+      },
+
     },
   },
   plugins: [],
