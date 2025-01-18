@@ -8,23 +8,34 @@ const Navbar = () => {
     const sideMenuRef = useRef();
 
     const openMenu = ()=> {
-        sideMenuRef.current.style.tranform = 'translateX(-16rem)'
+        sideMenuRef.current.style.transform = 'translateX(-16rem)'
     }
 
     const closeMenu = ()=> {
-        sideMenuRef.current.style.tranform = 'translateX(16rem)'
+        sideMenuRef.current.style.transform = 'translateX(16rem)'
     }
 
-    useEffect(()=> {
-        window.addEventListener('scroll', ()=>{
-            if(scrollY > 50){
-                setIsScroll(true)
-            }else{
-                setIsScroll(false)
-            }
-        })
-    },[])
+    // useEffect(()=> {
+    //     window.addEventListener('scroll', ()=>{
+    //         if(scrollY > 50){
+    //             setIsScroll(true)
+    //         }else{
+    //             setIsScroll(false)
+    //         }
+    //     })
+    // },[])
  
+
+    useEffect(() => {
+        const handleScroll = () => setIsScroll(window.scrollY > 50);
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    
     return (
     <>
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
@@ -59,7 +70,6 @@ const Navbar = () => {
 
                 <button className='block md:hidden ml-3' onClick={openMenu}>
                   <Image src={assets.menu_black}  alt='' className='w-6' />
-
                 </button>
 
             </div>
