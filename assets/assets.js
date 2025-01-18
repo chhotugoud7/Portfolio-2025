@@ -38,14 +38,15 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
 
 // import more skills 
-import react_Icon from './react-icon.png';  // Add the React icon
-import nextjs_Icon from './nextjs-icon.png';  // Add the Next.js icon
-import tailwind_Icon from './tailwind-icon.png';  // Add the Tailwind CSS icon
-import javascript_Icon from './javascript-icon.png';  // Add the JavaScript icon
-import nodejs_Icon from './nodejs-icon.png';  // Add the Node.js icon
-import express_Icon from './express-icon.png';  // Add the Express.js icon
-import django_Icon from './django-icon.png';  // Add the Django icon
+import react_Icon from './react-icon.png';  
+import nextjs_Icon from './nextjs-icon.png';  
+import tailwind_Icon from './tailwind-icon.png';  
+import javascript_Icon from './javascript-icon.png';  
+import nodejs_Icon from './nodejs-icon.png';  
+import express_Icon from './express-icon.png';  
+import django_Icon from './django-icon.png';  
 import pandit_project_image from './pandit-booking-image1.png';
+import portfolio_2025_image from './portfolio_2025_image.png';
 
 export const assets = {
     user_image,
@@ -95,31 +96,11 @@ export const assets = {
     express_Icon,
     django_Icon,
     pandit_project_image,
+    portfolio_2025_image,
 
 };
 
-export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
@@ -171,9 +152,19 @@ export const projectData = [
       title: 'Pandit Booking Website',
       description: 'A platform that allows users to book Pandits based on their availability, specialization, and pricing.',
       technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Razorpay'],
-      imageUrl: assets.pandit_project_image, // Replace with actual path to image
-      githubLink: 'https://github.com/chhotugoud7/pandit-booking',  // Add your GitHub repo link
-      liveLink: 'https://pandit-booking.com',  // Replace with live project link if available
+      imageUrl: assets.pandit_project_image, 
+      githubLink: 'https://github.com/chhotugoud7/Pandit-Booking-Website',  
+      liveLink: 'https://github.com/chhotugoud7/Pandit-Booking-Website',  
     },
+
+    {
+        title: 'Portfolio 2025',
+        description:
+          'A responsive and interactive portfolio showcasing skills, projects, and experience. Built with modern web technologies to highlight professionalism and creativity.',
+        technologies: ['Next.js', 'React.js', 'Tailwind CSS', 'Framer Motion', 'Vercel Deployment'],
+        imageUrl: assets.portfolio_2025_image, 
+        githubLink: 'https://github.com/chhotugoud7/portfolio-2025', 
+        liveLink: 'https://github.com/chhotugoud7/portfolio-2025', 
+      },
   ];
   
