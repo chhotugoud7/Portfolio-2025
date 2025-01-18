@@ -27,8 +27,7 @@ export default {
         'yellow_circle': '0 0 8px 4px #FFD700',
         'orange_circle': '0 0 8px 4px #FF5733',
         'black_circle': '0 0 8px 4px #000000',
-        'red_circle': '0 0 8px 4px #FF0000',
-         
+        'red_circle': '0 0 8px 4px #FF0000', 
       },
       project_primary: {
         light: '#4f46e5', // Light shade for hover or active states
@@ -50,6 +49,9 @@ export default {
         DEFAULT: '#e5e7eb', // Neutral gray
         dark: '#6b7280', // Dark neutral text
       },
+      gridTemplateColumns: {
+        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
+      }
 
     },
   },
