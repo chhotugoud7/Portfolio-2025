@@ -164,7 +164,7 @@ export const projectData = [
         technologies: ['Next.js', 'React.js', 'Tailwind CSS', 'Framer Motion', 'Vercel Deployment'],
         imageUrl: assets.portfolio_2025_image, 
         githubLink: 'https://github.com/chhotugoud7/portfolio-2025', 
-        liveLink: 'https://github.com/chhotugoud7/portfolio-2025', 
+        liveLink: 'https://portfolio-2025-chhotu-gouds-projects.vercel.app/', 
       },
   ];
   
