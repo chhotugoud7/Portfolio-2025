@@ -19,7 +19,7 @@ const Footer = () => {
                     title="Click to copy email"
                 >
                     <Image src={assets.mail_icon} alt="Mail Icon" className="w-6" />
-                    <span className="font-Ovo">chhotu957588@gmail.com</span>
+                    <span className="font-Ovo  transition-colors duration-300 hover:text-green-500 hover:underline">chhotu957588@gmail.com</span>
                 </div>
 
                 <div className="text-center sm:flex items-center justify-center border-t border-gray-400 mx-[10%] mt-12 py-6">
