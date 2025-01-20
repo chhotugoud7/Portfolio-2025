@@ -23,3 +23,4 @@ In this portfolio, you can explore various projects I've worked on, including my
 
 Feel free to reach out through the contact form on the website, or via my social media profiles.
 
+- Linkedin
