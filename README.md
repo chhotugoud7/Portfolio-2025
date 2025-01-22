@@ -25,3 +25,4 @@ Feel free to reach out through the contact form on the website, or via my social
 
 - Linkedin
 - Leetcode
+- Geeksforgeeks
