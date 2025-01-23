@@ -51,9 +51,29 @@ export default {
       },
       gridTemplateColumns: {
         'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
-      }
+      },
+
+
+      keyframes: {
+        float: {
+          '0%': { transform: 'translateY(100%)', opacity: '0.5' },
+          '50%': { opacity: '1' },
+          '100%': { transform: 'translateY(-100%)', opacity: '0' },
+        },
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff' },
+          '50%': { boxShadow: '0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00' },
+        },
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite',
+        glow: 'glow 1.5s infinite',
+
+      },
+
 
     },
   },
+  darkMode: 'selector',
   plugins: [],
 };
