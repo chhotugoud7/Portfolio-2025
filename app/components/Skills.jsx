@@ -3,7 +3,7 @@ import { frontendSkillData, backendSkillData, toolsSkillData } from '@/assets/as
 import { infoList } from '@/assets/assets';
 import Image from 'next/image';
 
-const Skills = () => {
+const Skills = ({isDarkMode}) => {
     return (
         <div id='skills' className='w-full px-[4%] sm:px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg font-Ovo'>What I Offer</h4>
@@ -16,8 +16,8 @@ const Skills = () => {
             {/* Skills Grid */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10'>
                 {/* Frontend Skills Section */}
-                <div className='bg-gray-100 p-6 rounded-lg shadow-md hover:bg-orange-50 hover:-translate-y-1 duration-500 hover:shadow-red_circle'>
-                    <h3 className='text-xl font-semibold mb-4 text-center font-Ovo '>Frontend Skills</h3>
+                <div className='bg-gray-100 p-6 rounded-lg shadow-md hover:bg-orange-50 hover:-translate-y-1 duration-500 hover:shadow-red_circle dark:bg-black dark:border dark:hover:bg-darkHover'>
+                    <h3 className='text-xl font-semibold mb-4 text-center font-Ovo'>Frontend Skills</h3>
                     <ul className='grid grid-cols-3 gap-4 justify-items-center'>
                         {frontendSkillData.map(({ icon, title }, index) => (
                             <li
@@ -41,7 +41,7 @@ const Skills = () => {
                 </div>
 
                 {/* Backend Skills Section */}
-                <div className='bg-gray-100 p-6 rounded-lg shadow-md hover:bg-blue-50 hover:-translate-y-1 duration-500 hover:shadow-blue_circle'>
+                <div className='bg-gray-100 p-6 rounded-lg shadow-md hover:bg-blue-50 hover:-translate-y-1 duration-500 hover:shadow-blue_circle  dark:bg-black dark:border dark:hover:bg-darkHover'>
                     <h3 className='text-xl font-semibold mb-4 text-center font-Ovo'>Backend Skills</h3>
                     <ul className='grid grid-cols-3 gap-4 justify-items-center '>
                         {backendSkillData.map(({ icon, title }, index) => (
@@ -67,7 +67,7 @@ const Skills = () => {
 
 
                 {/* Tools Section */}
-                <div className='bg-gray-100 p-6 rounded-lg shadow-md hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-purple_circle'>
+                <div className='bg-gray-100 p-6 rounded-lg shadow-md hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-purple_circle  dark:bg-black dark:border dark:hover:bg-darkHover'>
                     <h3 className='text-xl font-semibold mb-4 text-center font-Ovo '>Tools I Used</h3>
                     <ul className='grid grid-cols-3 gap-4 justify-items-center'>
                         {toolsSkillData.map(({ icon, title }, index) => (

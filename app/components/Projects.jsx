@@ -2,11 +2,11 @@ import React from 'react';
 import { projectData } from '@/assets/assets';
 import Image from 'next/image';
 
-const Projects = () => {
+const Projects = ({isDarkMode}) => {
   return (
     <div id="projects" className="w-full py-10 px-[4%] sm:px-[12%]">
       <h2 className="text-center text-5xl font-Ovo mb-4">My Projects</h2>
-      <p className="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-10">
+      <p className="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-10 dark:text-white">
         Here are some of the projects I’ve worked on. Each project demonstrates my skills in web development, including frontend, backend, and responsive design. Feel free to explore and connect!
       </p>
 
@@ -15,7 +15,7 @@ const Projects = () => {
         {projectData.map(({ title, description, technologies, imageUrl, githubLink, liveLink }, index) => (
           <React.Fragment key={index}>
             <div
-              className={`flex flex-col sm:flex-row bg-gray-100 p-6 rounded-lg shadow-md hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-purple_circle ${
+              className={`flex flex-col sm:flex-row bg-gray-100 p-6 rounded-lg shadow-md hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-purple_circle dark:bg-black dark:border dark:hover:bg-darkHover ${
                 index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
               } items-center gap-12 group`}
             >
@@ -24,17 +24,17 @@ const Projects = () => {
                 <Image
                   src={imageUrl}
                   alt={title}
-                  className="w-full object-cover rounded-lg shadow-md transition-transform duration-500 hover:scale-105  border-2 bg-white border-gray-300 p-2   hover:shadow-blue_circle"
+                  className="w-full object-cover rounded-lg shadow-md transition-transform duration-500 hover:scale-105  border-2 bg-white border-gray-300 p-2   hover:shadow-blue_circle dark:border"
                 />
               </div>
 
               {/* Project Description */}
               <div
-                className="flex-1 p-6 px-4 rounded-lg shadow-md transition-transform duration-500 hover:-translate-y-1 object-contain border-2 bg-white border-gray-300  hover:scale-106 hover:shadow-red_circle"
+                className="flex-1 p-6 px-4 rounded-lg shadow-md transition-transform duration-500 hover:-translate-y-1 object-contain border-2 bg-white border-gray-300  hover:scale-106 hover:shadow-red_circle  dark:bg-black dark:border dark:hover:bg-black "
               >
-                <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-                <p className="text-gray-600 mb-4 text-justify">{description}</p>
-                <div className="text-sm text-gray-500 mb-4">
+                <h3 className="text-2xl font-semibold mb-2 dark:text-white dark:underline">{title}</h3>
+                <p className="text-gray-600 mb-4 text-justify dark:text-white">{description}</p>
+                <div className="text-sm text-gray-500 mb-4 dark:text-white">
                   <strong>Technologies:</strong> {technologies.join(', ')}
                 </div>
 
@@ -44,7 +44,7 @@ const Projects = () => {
                     href={githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline hover:text-blue-700"
+                    className="text-blue-500 hover:underline hover:text-blue-700 dark:bg-white dark:border dark:px-2 dark:rounded-md"
                   >
                     GitHub
                   </a>
@@ -52,7 +52,7 @@ const Projects = () => {
                     href={liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-green-500 hover:underline hover:text-green-700"
+                    className="text-green-500 hover:underline hover:text-green-700 dark:bg-white dark:border dark:px-2 dark:rounded-md"
                   >
                     Live Demo
                   </a>
