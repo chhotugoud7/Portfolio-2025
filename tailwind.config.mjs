@@ -28,6 +28,8 @@ export default {
         'orange_circle': '0 0 8px 4px #FF5733',
         'black_circle': '0 0 8px 4px #000000',
         'red_circle': '0 0 8px 4px #FF0000', 
+         
+
       },
       project_primary: {
         light: '#4f46e5', // Light shade for hover or active states

@@ -22,7 +22,7 @@ const About = ({isDarkMode}) => {
             <div className='w-64 sm:w-80 rounded-3xl max-w-none '>
                 <Image
                  src={assets.user_image} alt='user' className='w-full rounded-3xl 
-                 hover:-translate-y-1 duration-500 hover:shadow-black_circle 
+                 hover:-translate-y-1 duration-500 hover:shadow-black_circle dark:hover:shadow-orange_circle
                  ' />
             </div>
             <div className='flex-1'>
